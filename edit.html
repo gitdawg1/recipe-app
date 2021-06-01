@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Recipe App</title>
+    <link href="./images/favicon.ico" rel="icon">
+    <link href="./styles/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1 class="header__title">Recipe App</h1>
+        <h2 class="header__subtitle">Make some yummy food</h2>
+      </div>
+    </div>
+    <div class="actions__container actions__container--spaced">
+      <a href="index.html">Home</a>
+      <span id="last-edited"></span>
+    </div>
+    <div class="container">
+      <input id="recipe-name" class="title-input" placeholder="Recipe name">
+      <textarea id="recipe-directions" class="body-input" placeholder="Enter directions"></textarea>
+    </div>
+    <div class="container">
+      <h2>Ingredients</h2>
+        <div id="recipe-ingredients"></div>
+        <form id="new-ingredient">
+        <input type="text" class="input" placeholder="New ingredient" name="text">
+        <button id="add-ingredient" class="button">Add Ingredient</button>
+        </form>
+      </div>
+      <div class="container">
+        <h2>Danger zone</h2>
+      <button id="remove-recipe" class="button button--secondary">Delete recipe</button>
+    </div>
+    <script src="./scripts/uuidv4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
+    <script src="scripts/recipes-functions.js"></script>
+    <script src="scripts/recipe-edit.js"></script>
+  </body>
+</html>
